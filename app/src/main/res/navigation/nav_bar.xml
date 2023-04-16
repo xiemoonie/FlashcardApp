@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_bar"
+    app:startDestination="@id/fragmentTranslation">
+
+    <fragment
+        android:id="@+id/fragmentFlashcard"
+        android:name="com.example.czechapp.FlashCardFragment"
+        android:label="fragment_flash_card"
+        tools:layout="@layout/fragment_flash_card" >
+        <action
+            android:id="@+id/action_fragmentFlashcard_to_fragmentTranslation"
+            app:destination="@id/fragmentTranslation" />
+        <action
+            android:id="@+id/action_fragmentFlashcard_to_writeTranslationFragment"
+            app:destination="@id/fragmentWriteTranslation" />
+        <action
+            android:id="@+id/action_fragmentFlashcard_to_alarm"
+            app:destination="@id/alarm" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTranslation"
+        android:name="com.example.czechapp.TranslationFragment"
+        android:label="fragmentTranslation"
+        tools:layout="@layout/fragment_translation" >
+        <action
+            android:id="@+id/action_fragmentTranslation_to_writeTranslationFragment"
+            app:destination="@id/fragmentWriteTranslation" />
+        <action
+            android:id="@+id/action_fragmentTranslation_to_fragmentFlashcard"
+            app:destination="@id/fragmentFlashcard" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentWriteTranslation"
+        android:name="com.example.czechapp.WriteTranslationFragment"
+        android:label="fragment_write_translation"
+        tools:layout="@layout/fragment_write_translation" >
+        <action
+            android:id="@+id/action_writeTranslationFragment_to_fragmentTranslation"
+            app:destination="@id/fragmentTranslation" />
+        <action
+            android:id="@+id/action_writeTranslationFragment_to_fragmentFlashcard"
+            app:destination="@id/fragmentFlashcard" />
+    </fragment>
+    <fragment
+        android:id="@+id/alarm"
+        android:name="com.example.czechapp.Alarm"
+        android:label="fragment_alarm"
+        tools:layout="@layout/fragment_alarm" >
+        <action
+            android:id="@+id/action_alarm_to_fragmentFlashcard"
+            app:destination="@id/fragmentFlashcard" />
+    </fragment>
+</navigation>

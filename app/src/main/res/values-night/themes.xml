@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CzechApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">#EEEEEE</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/orangeNight</item>
+        <item name="colorOnSecondary">@color/orangeLight</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/blueNight</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.CzechApp.NoActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.CzechApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.CzechApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
+

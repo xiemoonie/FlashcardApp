@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragmentAlarm"
+    android:background="@color/white"
+    tools:context=".Alarm">
+
+    <TextView
+        android:id="@+id/clockText"
+        android:text="08:45 PM"
+        android:textSize="50dp"
+        android:layout_marginTop="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backTimerButton"
+        android:text="back"
+        android:textColor="@color/orangeLight"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/saveTimerButton"
+        app:layout_constraintTop_toBottomOf="@+id/clockText"
+
+        ></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveTimerButton"
+        android:text="save"
+        android:textColor="@color/orangeLight"
+        app:layout_constraintTop_toBottomOf="@+id/clockText"
+        app:layout_constraintLeft_toRightOf="@id/backTimerButton"
+        app:layout_constraintRight_toRightOf="parent"
+        ></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

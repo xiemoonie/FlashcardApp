@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentWriteTranslation"
+    android:layout_width="match_parent"
+    android:layout_height="750dp"
+    android:background="@color/white"
+    tools:context=".WriteTranslationFragment">
+
+    <EditText
+        android:id="@+id/sentence_editText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="250dp"
+        android:background="@color/orangeLight"
+        android:hint="Write Sentence"
+        android:textColor="@color/orangeDark"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/translation_editText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+    <EditText
+        android:id="@+id/translation_editText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/orangeLight"
+        android:hint="Write Translation"
+        android:textColor="@color/orangeDark"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sentence_editText"
+
+        ></EditText>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/blue"
+        android:text="Save"
+        android:textColor="@color/orangeLight"
+        app:layout_constraintLeft_toRightOf="@+id/backButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/translation_editText"></Button>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/blue"
+        android:text="Back"
+        android:textColor="@color/orangeLight"
+        app:layout_constraintRight_toLeftOf="@+id/saveButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/translation_editText"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

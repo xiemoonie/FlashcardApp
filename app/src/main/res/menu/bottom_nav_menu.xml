@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/fragmentFlashcard"
+    android:icon="@drawable/ic_awesome"
+    android:title="flashcards">
+</item>
+    <item
+        android:id="@+id/fragmentTranslation"
+        android:icon="@drawable/ic_article"
+        android:title="translation">
+    </item>
+</menu>
