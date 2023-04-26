@@ -6,6 +6,20 @@ Flashcard application designed for learning languages.
 
 
 
-https://user-images.githubusercontent.com/69655586/234555369-b0b293d7-7b06-4f80-b1c4-1b2725bd79be.mp4
+
+
+
+
+
+
+
+
+https://user-images.githubusercontent.com/69655586/234577994-8c7fb60b-eab8-40e4-aafb-ff28f1292f41.mp4
+
+
+
+
+
+
 
 
