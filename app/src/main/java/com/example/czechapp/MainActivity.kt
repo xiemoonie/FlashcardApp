@@ -65,7 +65,9 @@ class MainActivity : AppCompatActivity() {
 
         if (item.itemId == R.id.alarmIcon) {
             checkNotificationPermissionRequest()
-              return true
+            Log.d("alarmIcon", "PressingIcon")
+
+            return true
         } else {
             return item.onNavDestinationSelected(findNavController(R.id.nav_host_fragment))
             //return item.onNavDestinationSelected(findNavController(R.id.nav_host_fragment)) || super.onOptionsItemSelected(item)

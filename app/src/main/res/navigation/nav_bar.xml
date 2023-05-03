@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/fragmentFlashcard"
         android:name="com.example.czechapp.FlashCardFragment"
-        android:label="fragment_flash_card"
+        android:label="Flashcard App"
         tools:layout="@layout/fragment_flash_card" >
         <action
             android:id="@+id/action_fragmentFlashcard_to_fragmentTranslation"
@@ -23,7 +23,7 @@
     <fragment
         android:id="@+id/fragmentTranslation"
         android:name="com.example.czechapp.TranslationFragment"
-        android:label="fragmentTranslation"
+        android:label="Flashcard App"
         tools:layout="@layout/fragment_translation" >
         <action
             android:id="@+id/action_fragmentTranslation_to_writeTranslationFragment"
@@ -35,7 +35,7 @@
     <fragment
         android:id="@+id/fragmentWriteTranslation"
         android:name="com.example.czechapp.WriteTranslationFragment"
-        android:label="fragment_write_translation"
+        android:label="Flashcards Lab"
         tools:layout="@layout/fragment_write_translation" >
         <action
             android:id="@+id/action_writeTranslationFragment_to_fragmentTranslation"
@@ -47,7 +47,7 @@
     <fragment
         android:id="@+id/alarm"
         android:name="com.example.czechapp.Alarm"
-        android:label="fragment_alarm"
+        android:label="Alarm"
         tools:layout="@layout/fragment_alarm" >
         <action
             android:id="@+id/action_alarm_to_fragmentFlashcard"
