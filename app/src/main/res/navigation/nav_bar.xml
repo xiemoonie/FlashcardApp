@@ -35,7 +35,7 @@
     <fragment
         android:id="@+id/fragmentWriteTranslation"
         android:name="com.example.czechapp.WriteTranslationFragment"
-        android:label="Flashcards Lab"
+        android:label="Flashcard App"
         tools:layout="@layout/fragment_write_translation" >
         <action
             android:id="@+id/action_writeTranslationFragment_to_fragmentTranslation"
@@ -47,7 +47,7 @@
     <fragment
         android:id="@+id/alarm"
         android:name="com.example.czechapp.Alarm"
-        android:label="Alarm"
+        android:label="Flashcard App"
         tools:layout="@layout/fragment_alarm" >
         <action
             android:id="@+id/action_alarm_to_fragmentFlashcard"
